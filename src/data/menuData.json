@@ -1,0 +1,52 @@
+[
+     {
+       "title": "Dashboard",
+       "icon": "LuLayoutDashboard",
+       "link": "/"
+     },
+     {
+       "title": "Order",
+       "icon": "CiBoxes",
+       "link": "/order",
+       "submenu": [
+         {
+           "title": "Pending Orders",
+           "link": "/order/pending"
+         },
+         {
+           "title": "Completed Orders",
+           "link": "/order/completed"
+         },
+         {
+           "title": "Cancelled Orders",
+           "link": "/order/cancelled"
+         }
+       ]
+     },
+     {
+       "title": "Parties",
+       "icon": "HiOutlineBuildingOffice",
+       "link": "/parties"
+     },
+     {
+       "title": "Product",
+       "icon": "PackageSearch",
+       "link": "/product"
+     },
+     {
+       "title": "Visit",
+       "icon": "LuLayoutDashboard",
+       "link": "/visit"
+     },
+     {
+       "title": "SalesPerson",
+       "icon": "LiaStreetViewSolid",
+       "link": "/salesperson"
+     },
+     {
+       "title": "Attendance",
+       "icon": "LuClipboardEdit",
+       "link": "/attendance"
+     }
+   ]
+   
