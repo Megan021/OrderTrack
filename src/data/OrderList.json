@@ -1,0 +1,93 @@
+[
+     {
+       "id": 1,
+       "parties": "XYZ Corporation",
+       "image": "/images/ForOrder/items1.jpg",
+       "salesperson": [{ "name": "Alice Smith", "id": 321 }],
+       "orderinfo": [
+         {
+           "paymentmode": "card",
+           "status": "delivered",
+           "itemsnumber": 5,
+           "orderplaced": "Oct 10, 2024"
+         }
+       ],
+       "total": "500"
+     },
+     {
+       "id": 2,
+       "parties": "LMN Industries",
+       "image": "/images/ForOrder/items2.jpg",
+       "salesperson": [{ "name": "Bob Johnson", "id": 322 }],
+       "orderinfo": [
+         {
+           "paymentmode": "paypal",
+           "status": "pending",
+           "itemsnumber": 8,
+           "orderplaced": "Nov 15, 2024"
+         }
+       ],
+       "total": "850"
+     },
+     {
+       "id": 3,
+       "parties": "QRS Solutions",
+       "image": "/images/ForOrder/items3.jpg",
+       "salesperson": [{ "name": "Chris Lee", "id": 323 }],
+       "orderinfo": [
+         {
+           "paymentmode": "cash",
+           "status": "pending",
+           "itemsnumber": 3,
+           "orderplaced": "Nov 20, 2024"
+         }
+       ],
+       "total": "300"
+     },
+     {
+       "id": 4,
+       "parties": "PQR Supplies",
+       "image": "/images/ForOrder/items1.jpg",
+       "salesperson": [{ "name": "Diana Prince", "id": 324 }],
+       "orderinfo": [
+         {
+           "paymentmode": "bank transfer",
+           "status": "cancelled",
+           "itemsnumber": 10,
+           "orderplaced": "Nov 22, 2024"
+         }
+       ],
+       "total": "1200"
+     },
+     {
+       "id": 5,
+       "parties": "ABC Technologies",
+       "image": "/images/ForOrder/items2.jpg",
+       "salesperson": [{ "name": "Ethan Hunt", "id": 325 }],
+       "orderinfo": [
+         {
+           "paymentmode": "card",
+           "status": "cancelled",
+           "itemsnumber": 2,
+           "orderplaced": "Nov 18, 2024"
+         }
+       ],
+       "total": "150"
+     },
+     {
+       "id": 6,
+       "parties": "DEF Enterprises",
+       "image": "/images/ForOrder/items3.jpg",
+       "salesperson": [{ "name": "Fiona Brown", "id": 326 }],
+       "orderinfo": [
+         {
+           "paymentmode": "paypal",
+           "status": "delivered",
+           "itemsnumber": 7,
+           "orderplaced": "Nov 14, 2024"
+         }
+       ],
+       "total": "700"
+     }
+   ]
+   

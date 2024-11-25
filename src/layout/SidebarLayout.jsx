@@ -8,7 +8,7 @@ const SidebarLayout = ({children}) => {
       <div>
         <Navbar />
         <div className="flex">
-          <div className="w-[17%]">
+          <div className="w-[17%] border-r border-gray-300">
             <SideBarMenu />
           </div>
           <div className="p-6 w-full ">

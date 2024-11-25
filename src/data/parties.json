@@ -1,0 +1,39 @@
+[
+     {
+       "id": 1,
+       "name": "Bright Solutions",
+       "phone": "9808765432",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     },
+     {
+       "id": 2,
+       "name": "TechNova Ltd",
+       "phone": "9801122334",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     },
+     {
+       "id": 3,
+       "name": "Pioneer Logistics",
+       "phone": "9804455667",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     },
+     {
+       "id": 4,
+       "name": "Velocity Ventures",
+       "phone": "9802233445",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     },
+     {
+       "id": 5,
+       "name": "Future Innovations",
+       "phone": "9806677889",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     },
+     {
+       "id": 6,
+       "name": "Nexus Enterprises",
+       "phone": "9809988776",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
+     }
+   ]
+   

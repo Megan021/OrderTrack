@@ -16,7 +16,7 @@ const SideBarMenu = () => {
   };
 
   return (
-    <div className='bg-white bg-opacity-50 flex pt-5 h-[95vh] border-r border-gray-300'>
+    <div className='bg-white bg-opacity-50 flex pt-5 h-auto sticky top-[75px]' >
       <ul className='rounded-3xl overflow-hidden w-full px-1'>
         <Link to="/">
           <li className='hover:bg-black hover:text-white duration-200 p-3 w-full rounded-full flex items-center gap-3'>
@@ -40,10 +40,10 @@ const SideBarMenu = () => {
           {orderMenuOpen && (
             <ul className='p-1 bg-gray-100 rounded-3xl space-y-12 text-sm'>
               <Link to="/order/pending">
-                <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Pending Orders</li>
+                <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Orders Items</li>
               </Link>
               <Link to="/order/completed">
-                <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Completed Orders</li>
+                <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Orders Return</li>
               </Link>
               <Link to="/order/cancelled">
                 <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Cancelled Orders</li>

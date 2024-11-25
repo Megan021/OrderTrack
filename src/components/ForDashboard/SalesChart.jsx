@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar, BarChart } from "recharts";
+import { Bar, BarChart, ResponsiveContainer } from "recharts";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -16,10 +16,14 @@ const SalesChart = () => {
      <div>
           <h2 className="font-semibold text-xl pb-4">Recent Sales</h2>
      </div>
-      <BarChart width={640} height={300} data={chartData}>
-        <Bar dataKey="desktop" fill="#2563eb" radius={4} />
-        <Bar dataKey="mobile" fill="#60a5fa" radius={4} />
-      </BarChart>
+     <div className="w-full h-[300px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={chartData}>
+            <Bar dataKey="desktop" fill="#2563eb" radius={4} />
+            <Bar dataKey="mobile" fill="#60a5fa" radius={4} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };
