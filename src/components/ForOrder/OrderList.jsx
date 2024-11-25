@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { TiEdit } from "react-icons/ti";
-import { IoEyeOutline } from "react-icons/io5";
-import { AiOutlineDelete } from "react-icons/ai";
-import { PencilLine } from "lucide-react";
 import OrderItems from "../../data/OrderList.json";
 import {
   Pagination,
@@ -12,6 +8,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { Eye, Pencil, Trash } from "lucide-react";
 
 const ITEMS_PER_PAGE = 4; // Number of items to display per page
 
@@ -45,8 +42,8 @@ const OrderList = () => {
                 <tr className="divide-x-2">
                   <th className=" px-4 py-2 text-left">Order Info</th>
                   <th className=" px-4 py-3">Party Name</th>
+                  <th className=" px-4 py-2">Date</th>
                   <th className=" px-4 py-2">Salesperson Info</th>
-                  {/* <th className=" px-4 py-2">Date</th> */}
                   {/* <th className=" px-4 py-2">Status</th> */}
                   <th className=" px-4 py-2">Total</th>
                   {/* <th className=" px-4 py-2">Mode</th> */}
@@ -76,10 +73,6 @@ const OrderList = () => {
                             <span className="font-medium">Order Id:</span>{" "}
                             {OrderItem.id}
                           </li>
-                          <li>
-                            <span className="font-medium">Payment:</span>{" "}
-                            {OrderItem.orderinfo[0].paymentmode}
-                          </li>
                           <li className="flex items-center gap-1">
                             <span className="font-medium">Status:</span>{" "}
                             <div
@@ -96,13 +89,23 @@ const OrderList = () => {
                             </div>
                           </li>
                           <li>
+                            <span className="font-medium">Payment:</span>{" "}
+                            {OrderItem.orderinfo[0].paymentmode}
+                          </li>
+                          {/* <li>
                             <span className="font-medium">Placed:</span>{" "}
                             {OrderItem.orderinfo[0].orderplaced}
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </td>
                     <td className=" px-4 py-2">{OrderItem.parties}</td>
+                    <td className=" px-4 py-2 text-sm leading-6">
+                      <ul>
+                        <li><span className="font-semibold">Ordered date: </span>{OrderItem.orderinfo[0].orderplaced}</li>
+                        <li><span className="font-semibold">Estimated date: </span>{OrderItem.orderinfo[0].estimateddate}</li>
+                      </ul>
+                    </td>
                     <td className=" px-4 py-2 text-sm">
                       <span className="font-medium">Id: {OrderItem.salesperson[0].id}</span>
                       <br />
@@ -128,13 +131,13 @@ const OrderList = () => {
                     {/* <td className=" px-4 py-2">
                       {OrderItem.orderinfo[0].paymentmode}
                     </td> */}
-                    <td className="border">
-                      <div className="mx-auto group relative">
+                    <td className="border-x py-3">
+                      {/* <div className="mx-auto group relative">
                         <button className="mx-auto bg-white text-black flex items-center h-full gap-2 border border-gray-300 rounded-xl p-1 px-2">
                           <PencilLine size={14} />
                           Action
                         </button>
-                        <ul className="hidden group-hover:block absolute w-auto bg-white border border-gray-300 rounded-xl right-5 z-10 p-4 space-y-2">
+                        <ul className="bg-white border border-gray-300 rounded-xl right-5 z-10 p-4 space-y-2">
                           <li className="flex items-center gap-2 hover:underline cursor-pointer">
                             <IoEyeOutline className=" " />
                             <span className="">View</span>
@@ -148,6 +151,12 @@ const OrderList = () => {
                             <span className="">Delete</span>
                           </li>
                         </ul>
+                      </div> */}
+
+                      <div className="flex flex-col gap-2">
+                        <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Eye size={17} strokeWidth={1.3} />View</button>
+                        <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Pencil size={17} strokeWidth={1.3} />Edit</button>
+                        <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Trash size={17} strokeWidth={1.3} />Delete</button>
                       </div>
                     </td>
                   </tr>

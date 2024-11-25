@@ -12,6 +12,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { Link } from "react-router-dom";
 
 const Order = () => {
   const [isModelOpen, setIsModelOpen] = useState(false);
@@ -41,13 +42,14 @@ const Order = () => {
         </div>
 
         <div>
+          <Link to="/create-order">
           <button
-            onClick={handelOpenModel}
             className="p-3 px-6 border border-gray-300 shadow-lg hover:shadow-sm duration-300 rounded-xl text-sm flex items-center gap-1"
           >
             <Plus />
             Add New Order
           </button>
+          </Link>
 
           {isModelOpen && <CreateOrderModel onClose={handelCloseModel} />}
         </div>

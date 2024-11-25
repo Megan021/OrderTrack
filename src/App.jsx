@@ -7,6 +7,7 @@ import Order from "./pages/ForOrder/Order";
 import Parties from "./pages/Parties";
 import Attendance from "./pages/Attendance";
 import ScrollToTop from "./components/ScrollToTop";
+import CreateOrder from "./pages/ForOrder/CreateOrder";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/order" element={<Order />}  />
         <Route path="/parties" element={<Parties />}  />
         <Route path="/attendance" element={<Attendance />}  />
+        <Route path="/create-order" element={<CreateOrder />}  />
       </Routes>
       </SidebarLayout>
     </Router>
