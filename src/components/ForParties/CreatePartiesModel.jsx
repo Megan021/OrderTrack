@@ -1,7 +1,7 @@
-import { ChevronDown, X } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import { ChevronDown, X } from "lucide-react";
 
-const CreateOrderModel = ({ onClose }) => {
+const CreatePartiesModel = ({ onClose }) => {
   const modalRef = useRef(null);
   const [paymentMode, setPaymentMode] = useState(false);
   const [selectedMode, setSelectedMode] = useState("");
@@ -22,16 +22,16 @@ const CreateOrderModel = ({ onClose }) => {
     setSelectedMode(mode);
     setPaymentMode(false);
   };
-  
+
   return (
     <>
-      <div
-        ref={modalRef}
-        className="bg-gray-50 bg-opacity-50 backdrop-blur-lg border border-gray-300 rounded-xl absolute w-[80vh] mx-auto inset-0 max-h-[82vh] top-24 shadow-md custom-scroll"
-      >
-        <div className="flex flex-col justify-center">
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div
+          ref={modalRef}
+          className="bg-gray-50 border border-gray-300 rounded-xl w-[80vh] max-h-[82vh] shadow-md overflow-y-auto custom-scroll relative"
+        >
           <div className="bg-white flex items-center justify-between rounded-t-xl p-4 border-b sticky top-0">
-            <h2 className="text-xl font-medium">Create New Order</h2>
+            <h2 className="text-xl font-medium">Create New Parties</h2>
             <button onClick={onClose}>
               <X className="stroke-1" />
             </button>
@@ -46,7 +46,7 @@ const CreateOrderModel = ({ onClose }) => {
               />
             </div>
             <div>
-              <h2 className="pb-1">Sales Person*</h2>
+              <h2 className="pb-1">Address*</h2>
               <input
                 type="text"
                 placeholder="Enter Customer Id"
@@ -104,4 +104,4 @@ const CreateOrderModel = ({ onClose }) => {
   );
 };
 
-export default CreateOrderModel;
+export default CreatePartiesModel;

@@ -19,6 +19,11 @@ import Product from "../../data/product.json";
 const CreateOrder = () => {
   const [paymentMode, setPaymentMode] = useState(false);
   const [selectedMode, setSelectedMode] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
 
   const [parties, setParties] = useState(Product);
   const [searchTerm, setSearchTerm] = useState("");
@@ -37,7 +42,7 @@ const CreateOrder = () => {
     <>
       <div className="">
         <div className="flex gap-5">
-          <div className="w-[60%]">
+          <div className="w-[60%] ">
             <h2 className="flex gap-0.5 items-center mb-7">
               <Link to="/order" className="font-medium text-lg">
                 Order
@@ -67,7 +72,7 @@ const CreateOrder = () => {
                   <img
                     src={items.image}
                     alt=""
-                    className="rounded-xl w-full h-[20vh] object-cover border"
+                    className="rounded-lg w-full h-[20vh] object-cover border"
                   />
                   <div className="flex items-end justify-between">
                     <div className="text-sm mt-3 leading-6">
@@ -121,13 +126,15 @@ const CreateOrder = () => {
                   )}
                 </div>
               </div>
-              <button className="p-3 border border-gray-300 shadow hover:bg-black hover:text-white duration-200 rounded-xl w-52 flex items-center gap-2">
+              <button onClick={handleModalClose} className="p-3 border border-gray-300 shadow hover:bg-black hover:text-white duration-200 rounded-xl w-52 flex items-center gap-2">
                 <Plus size={17} />
                 New Parties
               </button>
             </div>
-            <div className="border border-gray-300 shadow-sm rounded-xl p-4">
-              <div className="border-b border-gray-300 pb-4">
+            <div className="border border-gray-300 shadow-sm rounded-xl p-4 sticky top-[85px]">
+              {/* <div className="bordersticky top-40"> */}
+
+              <div className="border-b border-gray-300 pb-4 sticky">
                 <h2>Order #2314</h2>
               </div>
 
@@ -197,14 +204,48 @@ const CreateOrder = () => {
               </div>
 
             <div>
-            <div className="flex gap-4 my-4">
+            <div className="my-4">
+              {/* <h2 className="pb-1">Payment Mode*</h2> */}
+              <div className="relative">
+                <button
+                  className="w-full text-left p-2.5 border border-gray-300 rounded-xl focus:outline-none bg-white flex items-center justify-between"
+                  onClick={() => setPaymentMode(!paymentMode)}
+                >
+                  {selectedMode || "Select Payment Mode*"} <ChevronDown />
+                </button>
+                {paymentMode && (
+                  <div className="absolute w-full border rounded-md shadow-md bg-white mt-2">
+                    <div
+                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleSelectMode("Esewa")}
+                    >
+                      Esewa
+                    </div>
+                    <div
+                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleSelectMode("Card")}
+                    >
+                      Card
+                    </div>
+                    <div
+                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleSelectMode("Cash")}
+                    >
+                      Cash
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            {/* <div className="flex gap-4 my-4">
               <button className="p-5 border border-gray-300 shadow rounded-xl flex-1 text-center hover:bg-black hover:text-white duration-300"><HandCoins strokeWidth={1.3} className="mx-auto pb-1" />Cash</button>
               <button className="p-5 border border-gray-300 shadow rounded-xl flex-1 text-center hover:bg-black hover:text-white duration-300"><CreditCard strokeWidth={1.3} className="mx-auto pb-1" />Card</button>
               <button className="p-5 border border-gray-300 shadow rounded-xl flex-1 text-center hover:bg-black hover:text-white duration-300"><DollarSign strokeWidth={1.3} className="mx-auto pb-1" />Esewa</button>
-            </div>
+            </div> */}
               <button className="bg-black w-full rounded-xl text-white p-3">Place Order</button>
             </div>
-            </div>
+            {/* </div> */}
+              </div>
 
           </div>
         </div>
