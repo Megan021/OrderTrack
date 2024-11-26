@@ -1,0 +1,45 @@
+[
+     {
+       "id": 1,
+       "name": "Coffee",
+       "code": 234244,
+       "price": 3000,
+       "image": "/images/ForProduct/item1.jpeg"
+     },
+     {
+       "id": 2,
+       "name": "Tea",
+       "code": 345678,
+       "price": 1500,
+       "image": "/images/ForProduct/item2.png"
+     },
+     {
+       "id": 3,
+       "name": "Juice",
+       "code": 456789,
+       "price": 2000,
+       "image": "/images/ForProduct/item3.png"
+     },
+     {
+       "id": 4,
+       "name": "Milkshake",
+       "code": 567890,
+       "price": 2500,
+       "image": "/images/ForProduct/item4.png"
+     },
+     {
+       "id": 5,
+       "name": "Smoothie",
+       "code": 678901,
+       "price": 2800,
+       "image": "/images/ForProduct/item5.png"
+     },
+     {
+       "id": 6,
+       "name": "Water",
+       "code": 789012,
+       "price": 500,
+       "image": "/images/ForProduct/item6.png"
+     }
+   ]
+   

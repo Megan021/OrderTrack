@@ -8,6 +8,7 @@ import Parties from "./pages/Parties";
 import Attendance from "./pages/Attendance";
 import ScrollToTop from "./components/ScrollToTop";
 import CreateOrder from "./pages/ForOrder/CreateOrder";
+import Product from "./pages/Product";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />}  />
         <Route path="/order" element={<Order />}  />
         <Route path="/parties" element={<Parties />}  />
+        <Route path="/product" element={<Product />}  />
         <Route path="/attendance" element={<Attendance />}  />
         <Route path="/create-order" element={<CreateOrder />}  />
       </Routes>
