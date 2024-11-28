@@ -9,6 +9,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { Eye, Pencil, Trash } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ITEMS_PER_PAGE = 4; // Number of items to display per page
 
@@ -154,7 +155,9 @@ const OrderList = () => {
                       </div> */}
 
                       <div className="flex flex-col gap-2">
+                        <Link to="/orderview">
                         <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Eye size={17} strokeWidth={1.3} />View</button>
+                        </Link>
                         <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Pencil size={17} strokeWidth={1.3} />Edit</button>
                         <button className="hover:bg-black hover:text-white duration-300 p-1.5 border border-gray-300 shadow-sm rounded-xl w-[80%] mx-auto flex items-center justify-center gap-1"><Trash size={17} strokeWidth={1.3} />Delete</button>
                       </div>

@@ -1,39 +1,68 @@
 [
-     {
-       "id": 1,
-       "name": "Bright Solutions",
-       "phone": "9808765432",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     },
-     {
-       "id": 2,
-       "name": "TechNova Ltd",
-       "phone": "9801122334",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     },
-     {
-       "id": 3,
-       "name": "Pioneer Logistics",
-       "phone": "9804455667",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     },
-     {
-       "id": 4,
-       "name": "Velocity Ventures",
-       "phone": "9802233445",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     },
-     {
-       "id": 5,
-       "name": "Future Innovations",
-       "phone": "9806677889",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     },
-     {
-       "id": 6,
-       "name": "Nexus Enterprises",
-       "phone": "9809988776",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!"
-     }
-   ]
-   
+  {
+    "id": 1,
+    "name": "Bright Solutions",
+    "phone": "9808765432",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.brightsolutions.com",
+    "vat": "123456789",
+    "status": "active",
+    "state": "Bagmati",
+    "city": "Kathmandu"
+  },
+  {
+    "id": 2,
+    "name": "TechNova Ltd",
+    "phone": "9801122334",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.technova.com",
+    "vat": "987654321",
+    "status": "active",
+    "state": "Bagmati",
+    "city": "Lalitpur"
+  },
+  {
+    "id": 3,
+    "name": "Pioneer Logistics",
+    "phone": "9804455667",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.pioneerlogistics.com",
+    "vat": "564738291",
+    "status": "pending",
+    "state": "Province 1",
+    "city": "Biratnagar"
+  },
+  {
+    "id": 4,
+    "name": "Velocity Ventures",
+    "phone": "9802233445",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.velocityventures.com",
+    "vat": "837465192",
+    "status": "inactive",
+    "state": "Lumbini",
+    "city": "Butwal"
+  },
+  {
+    "id": 5,
+    "name": "Future Innovations",
+    "phone": "9806677889",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.futureinnovations.com",
+    "vat": "192837465",
+    "status": "active",
+    "state": "Gandaki",
+    "city": "Pokhara"
+  },
+  {
+    "id": 6,
+    "name": "Nexus Enterprises",
+    "phone": "9809988776",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias facere consequatur obcaecati, culpa nesciunt!",
+    "website": "www.nexusenterprises.com",
+    "vat": "102938475",
+    "status": "active",
+    "state": "Sudurpashchim",
+    "city": "Dhangadhi"
+  }
+]

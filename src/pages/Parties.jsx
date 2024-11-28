@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import partiesitems from "../data/parties.json";
-import { TfiArrowTopRight } from "react-icons/tfi";
 import { Building2, Pencil, Plus, Trash } from "lucide-react";
 import { IoSearchOutline } from "react-icons/io5";
 import {
@@ -12,15 +11,42 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import CreatePartiesModel from "@/components/ForParties/CreatePartiesModel";
 
 const Parties = () => {
   const [parties, setParties] = useState(partiesitems);
   const [searchTerm, setSearchTerm] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingIndex, setEditingIndex] = useState(null); // Track editing item
+  const [editFields, setEditFields] = useState({}); // Track editable field values
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
 
   // Filter parties based on the search term
   const filteredParties = parties.filter((party) =>
     party.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleEdit = (index) => {
+    setEditingIndex(index);
+    setEditFields(filteredParties[index]); // Initialize edit fields with current data
+  };
+
+  const handleFieldChange = (field, value) => {
+    setEditFields((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+  };
+
+  const handleSave = (index) => {
+    const updatedParties = [...parties];
+    updatedParties[index] = { ...editFields }; // Update the item with edited values
+    setParties(updatedParties);
+    setEditingIndex(null); // Exit edit mode
+  };
 
   return (
     <>
@@ -42,7 +68,7 @@ const Parties = () => {
           </div>
 
           <div>
-            <button className="p-3 px-6 border border-gray-300 shadow-lg hover:shadow-sm duration-300 rounded-xl text-sm flex items-center gap-1">
+            <button onClick={() => setIsModalOpen(true)} className="p-3 px-6 border border-gray-300 shadow-lg hover:shadow-sm duration-300 rounded-xl text-sm flex items-center gap-1">
               <Plus />
               Add New Parties
             </button>
@@ -73,7 +99,8 @@ const Parties = () => {
                 </div>
 
                 <div className="mt-5 flex justify-between border-b pb-2">
-                  <ul className="leading-7">
+                  <div className="w-full">
+                    <ul className="leading-7">
                     <li>Contact Person: </li>
                     <li>Phone: </li>
                     <li>Website: </li>
@@ -82,31 +109,101 @@ const Parties = () => {
                     <li>State: </li>
                     <li>City: </li>
                   </ul>
+                  </div>
 
-                  <ul className="text-end leading-7 font-medium text-sm">
-                    <li>John Doe</li>
-                    <li>9801234657</li>
-                    <li>www.companylink.com</li>
-                    <li>984123576</li>
-                    <li>pending</li>
-                    <li>Bagmati</li>
-                    <li>Kathmandu</li>
-                  </ul>
+                  <div className="w-full">
+                  {editingIndex === index ? (
+                    <ul className="text-end leading-7 font-medium text-sm">
+                      <li>
+                        <input
+                          value={editFields.name || ""}
+                          onChange={(e) => handleFieldChange("name", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.phone || ""}
+                          onChange={(e) => handleFieldChange("phone", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.website || ""}
+                          onChange={(e) => handleFieldChange("website", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.vat || ""}
+                          onChange={(e) => handleFieldChange("vat", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.status || ""}
+                          onChange={(e) => handleFieldChange("status", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.state || ""}
+                          onChange={(e) => handleFieldChange("state", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          value={editFields.city || ""}
+                          onChange={(e) => handleFieldChange("city", e.target.value)}
+                          className="text-right rounded w-full focus:outline-none"
+                        />
+                      </li>
+                    </ul>
+                  ) : (
+                    <ul className="text-end leading-7 font-medium text-sm">
+                      <li>{item.name}</li>
+                      <li>{item.phone}</li>
+                      <li>{item.website}</li>
+                      <li>{item.vat}</li>
+                      <li>{item.status}</li>
+                      <li>{item.state}</li>
+                      <li>{item.city}</li>
+                    </ul>
+                  )}
+                  </div>
                 </div>
 
                 <div className="flex justify-end mt-3">
                   <div className="flex gap-2">
-                    <button><Trash size={33} className="border rounded-full bg-red-200 text-red-600 p-2" /></button>
-                    <button className="rounded-full p-1 px-4 bg-blue-200 text-blue-600 flex items-center gap-2">
-                      <Pencil size={14} />
-                      Edit
+                    {editingIndex === index ? (
+                      <button
+                        onClick={() => handleSave(index)}
+                        className="rounded-full p-1 px-4 bg-green-200 text-green-600 flex items-center gap-2"
+                      >
+                        Save
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleEdit(index)}
+                        className="rounded-full p-1 px-4 bg-blue-200 text-blue-600 flex items-center gap-2"
+                      >
+                        <Pencil size={14} />
+                        Edit
+                      </button>
+                    )}
+                    <button>
+                      <Trash
+                        size={33}
+                        className="border rounded-full bg-red-200 text-red-600 p-2"
+                      />
                     </button>
                   </div>
-                  {/* <button className="underline underline-offset-4 flex items-center gap-1 text-sm">
-                    View More <TfiArrowTopRight />
-                  </button> */}
                 </div>
-                
               </div>
             </div>
           ))}
@@ -132,8 +229,8 @@ const Parties = () => {
             </PaginationContent>
           </Pagination>
         </div>
-
       </div>
+      {isModalOpen && <CreatePartiesModel onClose={handleModalClose} />}
     </>
   );
 };

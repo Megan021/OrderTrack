@@ -9,6 +9,7 @@ import Attendance from "./pages/Attendance";
 import ScrollToTop from "./components/ScrollToTop";
 import CreateOrder from "./pages/ForOrder/CreateOrder";
 import Product from "./pages/Product";
+import OrderView from "./pages/ForOrder/OrderView";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/product" element={<Product />}  />
         <Route path="/attendance" element={<Attendance />}  />
         <Route path="/create-order" element={<CreateOrder />}  />
+        <Route path="/orderview" element={<OrderView />}  />
       </Routes>
       </SidebarLayout>
     </Router>

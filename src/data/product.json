@@ -37,21 +37,21 @@
      {
        "id": 6,
        "name": "Water",
-       "code": 789012,
+       "code": 79012,
        "price": 500,
        "image": "/images/ForProduct/item6.png"
      },
      {
        "id": 7,
        "name": "Mug",
-       "code": 789012,
+       "code": 78901,
        "price": 500,
        "image": "/images/ForProduct/item6.png"
      },
      {
        "id": 8,
        "name": "Watter Bottle",
-       "code": 789012,
+       "code": 789322,
        "price": 500,
        "image": "/images/ForProduct/item6.png"
      }

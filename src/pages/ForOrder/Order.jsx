@@ -3,15 +3,15 @@ import { Plus } from "lucide-react";
 import { IoSearchOutline } from "react-icons/io5";
 import CreateOrderModel from "@/components/ForOrder/CreateOrderModel";
 import OrderList from "@/components/ForOrder/OrderList";
-import {
-  Pagination,
-  PaginationContent,
-  // PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+// import {
+//   Pagination,
+//   PaginationContent,
+//   // PaginationEllipsis,
+//   PaginationItem,
+//   PaginationLink,
+//   PaginationNext,
+//   PaginationPrevious,
+// } from "@/components/ui/pagination";
 import { Link } from "react-router-dom";
 
 const Order = () => {
@@ -55,8 +55,6 @@ const Order = () => {
         </div>
       </div>
       <OrderList />
-
-
     </>
   );
 };
