@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import CreateOrder from "./pages/ForOrder/CreateOrder";
 import Product from "./pages/Product";
 import OrderView from "./pages/ForOrder/OrderView";
+import SalesPerson from "./pages/SalesPerson";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/attendance" element={<Attendance />}  />
         <Route path="/create-order" element={<CreateOrder />}  />
         <Route path="/orderview" element={<OrderView />}  />
+        <Route path="/salesperson" element={<SalesPerson />}  />
       </Routes>
       </SidebarLayout>
     </Router>

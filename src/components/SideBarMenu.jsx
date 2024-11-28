@@ -26,9 +26,7 @@ const SideBarMenu = () => {
         {/* Order Menu with Dropdown */}
         <div className='relative'>
           <div 
-            className='flex items-center justify-between hover:bg-black hover:text-white duration-200 p-3 w-full rounded-full cursor-pointer'
-            
-          >
+            className='flex items-center justify-between hover:bg-black hover:text-white duration-200 p-3 w-full rounded-full cursor-pointer'>
               <Link to='/order'>
             <div className='flex items-center gap-3'>
               <CiBoxes className='text-lg' />Order
@@ -40,7 +38,7 @@ const SideBarMenu = () => {
           {orderMenuOpen && (
             <ul className='p-1 bg-gray-100 rounded-3xl space-y-12 text-sm'>
               <Link to="/order/pending">
-                <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Orders Items</li>
+                <li className='border border-black hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Orders Items</li>
               </Link>
               <Link to="/order/completed">
                 <li className='hover:bg-black hover:text-white duration-200 p-2 pl-7 rounded-full'>Orders Return</li>

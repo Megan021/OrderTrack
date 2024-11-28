@@ -1,0 +1,83 @@
+[
+     {
+       "id": 101,
+       "name": "John Smith",
+       "phone": 9801234657,
+       "address": "Sankhamul, Kathmandu",
+       "email": "john.smith@example.com",
+       "approved": "Approved"
+     },
+     {
+       "id": 102,
+       "name": "Jane Doe",
+       "phone": 9801234657,
+       "address": "Baneshwor, Kathmandu",
+       "email": "jane.doe@example.com",
+       "approved": "Pending"
+     },
+     {
+       "id": 103,
+       "name": "Alice Brown",
+       "phone": 9801234657,
+       "address": "Thamel, Kathmandu",
+       "email": "alice.brown@example.com",
+       "approved": "Approved"
+     },
+     {
+       "id": 104,
+       "name": "Bob Johnson",
+       "phone": 9801234657,
+       "address": "Patan, Lalitpur",
+       "email": "bob.johnson@example.com",
+       "approved": "Rejected"
+     },
+     {
+       "id": 105,
+       "name": "Charlie Davis",
+       "phone": 9801234657,
+       "address": "Bhaktapur",
+       "email": "charlie.davis@example.com",
+       "approved": "Approved"
+     },
+     {
+       "id": 106,
+       "name": "Emily Clark",
+       "phone": 9801234657,
+       "address": "Kapan, Kathmandu",
+       "email": "emily.clark@example.com",
+       "approved": "Pending"
+     },
+     {
+       "id": 107,
+       "name": "Frank White",
+       "phone": 9801234657,
+       "address": "Sanepa, Lalitpur",
+       "email": "frank.white@example.com",
+       "approved": "Approved"
+     },
+     {
+       "id": 108,
+       "name": "Grace Hill",
+       "phone": 9801234657,
+       "address": "Boudha, Kathmandu",
+       "email": "grace.hill@example.com",
+       "approved": "Rejected"
+     },
+     {
+       "id": 109,
+       "name": "Henry Green",
+       "phone": 9801234657,
+       "address": "Bhainsepati, Lalitpur",
+       "email": "henry.green@example.com",
+       "approved": "Approved"
+     },
+     {
+       "id": 110,
+       "name": "Isabel Martin",
+       "phone": 9801234657,
+       "address": "Gongabu, Kathmandu",
+       "email": "isabel.martin@example.com",
+       "approved": "Pending"
+     }
+   ]
+   
