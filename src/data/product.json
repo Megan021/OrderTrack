@@ -4,56 +4,72 @@
        "name": "Coffee",
        "code": 234244,
        "price": 3000,
-       "image": "/images/ForProduct/item1.jpeg"
+       "image": "/images/ForProduct/item1.jpeg",
+       "unit": "kg",
+             "Createdate":"2058-10-13"
      },
      {
        "id": 2,
        "name": "Tea",
        "code": 345678,
        "price": 1500,
-       "image": "/images/ForProduct/item2.png"
+       "image": "/images/ForProduct/item2.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      },
      {
        "id": 3,
        "name": "Juice",
        "code": 456789,
        "price": 2000,
-       "image": "/images/ForProduct/item3.png"
+       "image": "/images/ForProduct/item3.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      },
      {
        "id": 4,
        "name": "Milkshake",
        "code": 567890,
        "price": 2500,
-       "image": "/images/ForProduct/item4.png"
+       "image": "/images/ForProduct/item4.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      },
      {
        "id": 5,
        "name": "Smoothie",
        "code": 678901,
        "price": 2800,
-       "image": "/images/ForProduct/item5.png"
+       "image": "/images/ForProduct/item5.png",
+       "unit": "kg",
+       "Createdate":"2058-10-13"
      },
      {
        "id": 6,
        "name": "Water",
        "code": 789012,
        "price": 500,
-       "image": "/images/ForProduct/item6.png"
+       "image": "/images/ForProduct/item6.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      },
      {
        "id": 7,
        "name": "Mug",
        "code": 789012,
        "price": 500,
-       "image": "/images/ForProduct/item6.png"
+       "image": "/images/ForProduct/item6.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      },
      {
        "id": 8,
        "name": "Watter Bottle",
        "code": 789012,
        "price": 500,
-       "image": "/images/ForProduct/item6.png"
+       "image": "/images/ForProduct/item6.png",
+       "unit": "kg",
+        "Createdate":"2058-10-13"
      }
    ]
    

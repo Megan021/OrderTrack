@@ -1,6 +1,7 @@
 import { Plus } from "lucide-react";
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
+import  product from "../data/product.json";
 
 const Product = () => {
   return (
@@ -28,6 +29,43 @@ const Product = () => {
           </button>
         </div>
       </div>
+      <h2>Product List</h2>
+      <table className="w-full">
+        <thead className=" text-center text-[#71717A] border-gray-100 border-b bg-gray-50 w-full ">
+          <tr className="divide-x-2">
+            <th >Order Info</th>
+            {/* <th>Created Date</th> */}
+            <th>Code</th>
+            <th>Price</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {product.map((product) => (
+            <tr key={product.roh} className="border-b border-gray-200  ">
+               <td className="flex gap-3 ">
+                <div>
+                <img className="object-contain rounded-full size-16 border border-gray-300"
+                  src={product.image}
+                  alt={product.name}
+                />
+                </div>
+                <div>
+                  <ul>
+                <li>Order ID: {product.id}</li>
+                <li>Name : {product.name}</li>
+                  </ul>
+                </div>
+              </td>
+         
+              {/* <td>Create Date: {product.Createdate}</td> */}
+              <td>{product.code}</td>
+              <td>{product.price}</td>
+             <td>{product.unit}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
