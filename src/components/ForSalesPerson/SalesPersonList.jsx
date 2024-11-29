@@ -33,12 +33,12 @@ const SalesPersonList = () => {
             <table className="w-full text-sm">
               <thead className=" text-center text-[#71717A] border-gray-100 border-b bg-gray-50 ">
                 <tr className="divide-x-2">
-                  <th className=" px-4 py-2 text-left">Salesperson Info</th>
-                  <th className=" px-4 py-3">Phone</th>
-                  <th className=" px-4 py-2">Email</th>
-                  <th className=" px-4 py-2">Address</th>
-                  {/* <th className=" px-4 py-2">Total</th> */}
-                  <th className=" px-4 py-2">Action</th>
+                  <th className="px-4 py-2 text-left">Salesperson Info</th>
+                  <th className="  py-3">Phone</th>
+                  <th className="  py-2">Email</th>
+                  <th className="  py-2">Address</th>
+                  {/* <th className="  py-2">Total</th> */}
+                  <th className="  py-2">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -89,16 +89,16 @@ const SalesPersonList = () => {
                     <td className=" px-4 py-2">{salesperson?.phone}</td>
                     <td className=" px-4 py-2 text-sm leading-6">{salesperson?.email}</td>
                     <td className=" px-4 py-2 text-sm">{salesperson?.address}</td>
-                    <td className="border-x py-3 px-3">
+                    <td className="border-x py-3 px-2">
                       <div className="grid grid-cols-3 items-center w-full">
                         <Link to="/orderview">
-                        <button className='hover:bg-gray-100 p-1 rounded-full shadow'><Eye size={17} strokeWidth={1.3} /></button>
+                        <button className='hover:bg-gray-100 p-2 rounded-full shadow'><Eye size={17} strokeWidth={1.3} /></button>
                         </Link>
                         <Link to="/salesperson">
-                        <button className='hover:bg-gray-100 p-1 rounded-full shadow'><Pencil size={17} strokeWidth={1.3} /></button>
+                        <button className='hover:bg-gray-100 p-2 rounded-full shadow'><Pencil size={17} strokeWidth={1.3} /></button>
                         </Link>
                         <Link to="/salesperson">
-                        <button className='hover:bg-gray-100 p-1 rounded-full shadow'><Trash size={17} strokeWidth={1.3} /></button>
+                        <button className='hover:bg-gray-100 p-2 rounded-full shadow'><Trash size={17} strokeWidth={1.3} /></button>
                         </Link>
                       </div>
                     </td>

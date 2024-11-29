@@ -29,7 +29,7 @@ const CreatePartiesModel = ({ onClose }) => {
               <X className="stroke-1" />
             </button>
           </div>
-          <form className=" p-7 grid grid-cols-2 gap-4">
+          <form className=" p-7 grid grid-cols-2 gap-4 text-sm">
             <div className="col-span-2">
               <h2 className="pb-1">Parties Name*</h2>
               <input

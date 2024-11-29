@@ -1,59 +1,98 @@
 [
-     {
-       "id": 1,
-       "name": "Coffee",
-       "code": 234244,
-       "price": 3000,
-       "image": "/images/ForProduct/item1.jpeg"
-     },
-     {
-       "id": 2,
-       "name": "Tea",
-       "code": 345678,
-       "price": 1500,
-       "image": "/images/ForProduct/item2.png"
-     },
-     {
-       "id": 3,
-       "name": "Juice",
-       "code": 456789,
-       "price": 2000,
-       "image": "/images/ForProduct/item3.png"
-     },
-     {
-       "id": 4,
-       "name": "Milkshake",
-       "code": 567890,
-       "price": 2500,
-       "image": "/images/ForProduct/item4.png"
-     },
-     {
-       "id": 5,
-       "name": "Smoothie",
-       "code": 678901,
-       "price": 2800,
-       "image": "/images/ForProduct/item5.png"
-     },
-     {
-       "id": 6,
-       "name": "Water",
-       "code": 79012,
-       "price": 500,
-       "image": "/images/ForProduct/item6.png"
-     },
-     {
-       "id": 7,
-       "name": "Mug",
-       "code": 78901,
-       "price": 500,
-       "image": "/images/ForProduct/item6.png"
-     },
-     {
-       "id": 8,
-       "name": "Watter Bottle",
-       "code": 789322,
-       "price": 500,
-       "image": "/images/ForProduct/item6.png"
-     }
-   ]
-   
+  {
+    "id": 1,
+    "name": "Coffee",
+    "code": 234244,
+    "price": 3000,
+    "image": "/images/ForProduct/item1.jpeg",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 13,
+    "maxDiscountAllowed": 20,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Tea",
+    "code": 345678,
+    "price": 1500,
+    "image": "/images/ForProduct/item2.png",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 13,
+    "maxDiscountAllowed": 15,
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Juice",
+    "code": 456789,
+    "price": 2000,
+    "image": "/images/ForProduct/item3.png",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 13,
+    "maxDiscountAllowed": 10,
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "Milkshake",
+    "code": 567890,
+    "price": 2500,
+    "image": "/images/ForProduct/item4.png",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 13,
+    "maxDiscountAllowed": 12,
+    "status": "not active"
+  },
+  {
+    "id": 5,
+    "name": "Smoothie",
+    "code": 678901,
+    "price": 2800,
+    "image": "/images/ForProduct/item5.png",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 13,
+    "maxDiscountAllowed": 15,
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name": "Water",
+    "code": 789012,
+    "price": 500,
+    "image": "/images/ForProduct/item6.png",
+    "unit": "kg",
+    "category": "Beverage",
+    "vat": 0,
+    "maxDiscountAllowed": 5,
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name": "Mug",
+    "code": 789012,
+    "price": 500,
+    "image": "/images/ForProduct/item6.png",
+    "unit": "kg",
+    "category": "Accessory",
+    "vat": 15,
+    "maxDiscountAllowed": 10,
+    "status": "not active"
+  },
+  {
+    "id": 8,
+    "name": "Water Bottle",
+    "code": 789012,
+    "price": 500,
+    "image": "/images/ForProduct/item6.png",
+    "unit": "kg",
+    "category": "Accessory",
+    "vat": 15,
+    "maxDiscountAllowed": 8,
+    "status": "active"
+  }
+]

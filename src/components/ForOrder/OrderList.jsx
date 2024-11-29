@@ -38,7 +38,7 @@ const OrderList = () => {
       <div>
         <div className="flex w-full">
           <div className="w-full">
-            <table className="w-full">
+            <table className="w-full text-sm">
               <thead className=" text-center text-[#71717A] border-gray-100 border-b bg-gray-50 ">
                 <tr className="divide-x-2">
                   <th className=" px-4 py-2 text-left">Order Info</th>

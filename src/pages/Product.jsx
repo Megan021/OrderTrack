@@ -1,3 +1,4 @@
+import ProductList from "@/components/ForProduct/ProductList";
 import { Plus } from "lucide-react";
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
@@ -5,13 +6,13 @@ import { IoSearchOutline } from "react-icons/io5";
 const Product = () => {
   return (
     <>
-      <h1 className="font-semibold text-3xl">Parties</h1>
+      <h1 className="font-semibold text-3xl">Product</h1>
 
       <div className="my-8 mb-14 flex justify-between">
         <div className="flex items-center justify-between w-96 border border-gray-300 rounded-2xl px-4">
           <input
             type="search"
-            placeholder="Search Company..."
+            placeholder="Search Product..."
             className="py-3 w-[90%] focus:outline-none"
           //   value={searchTerm}
           //   onChange={(e) => setSearchTerm(e.target.value)} // Update the searchTerm state
@@ -28,6 +29,7 @@ const Product = () => {
           </button>
         </div>
       </div>
+      <ProductList />
     </>
   );
 };
