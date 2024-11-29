@@ -9,7 +9,7 @@ const ProductList = () => {
       <table className="w-full text-sm">
         <thead className=" text-center text-[#71717A] border-gray-100 border-b bg-gray-50 ">
           <tr className="divide-x-2 ">
-            <th className="pl-4 p-3 text-left">Order Info</th>
+            <th className="pl-4 p-3 text-left">Product Info</th>
             <th className="px-4">Code</th>
             <th className="px-4">Category</th>
             <th className="px-4">Unit</th>
@@ -32,7 +32,7 @@ const ProductList = () => {
                 </div>
                 <div>
                   <ul>
-                    <li><span className="font-medium">Order Id:</span> {product.id}</li>
+                    <li><span className="font-medium">Id:</span> {product.id}</li>
                     <li>Name : {product.name}</li>
                     <li className="flex items-center gap-1">Status : 
                       <div className={`p-0.5 px-2 rounded-full ${product.status === "active" ? "text-green-600 bg-green-200" : "text-red-600 bg-red-200"}`}>

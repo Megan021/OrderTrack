@@ -16,7 +16,7 @@ const SideBarMenu = () => {
   };
 
   return (
-    <div className="bg-white bg-opacity-50 flex pt-5 h-auto sticky top-[75px]">
+    <div className=" bg-white bg-opacity-50 flex pt-5 h-auto sticky top-[75px]">
       <ul className="rounded-3xl overflow-hidden w-full px-1">
         <Link to="/">
           <li className="hover:bg-black hover:text-white duration-200 p-3 w-full rounded-full flex items-center gap-3">

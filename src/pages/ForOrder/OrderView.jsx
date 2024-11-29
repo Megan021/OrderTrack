@@ -1,9 +1,13 @@
 import React from "react";
 
 const OrderView = () => {
+  const handlePrint = () => {
+    window.print();
+  }
+
   return (
     <>
-      <div>
+      <div className="print:block">
         <h1 className="font-semibold text-3xl mb-8">Order Invoice</h1>
         <div className="grid grid-cols-3">
           <div>
@@ -46,7 +50,7 @@ const OrderView = () => {
             <tr className="p-3">
               <th className="text-left p-3">Product Items</th>
               <th>Price</th>
-              <th>Date</th>
+              {/* <th>Date</th> */}
               <th>Quantity</th>
               <th>Discount</th>
               <th>SubTotal</th>
@@ -56,7 +60,7 @@ const OrderView = () => {
             <tr className="p-3">
               <td className="text-left p-3">Water</td>
               <td>Rs. 200</td>
-              <td>01/01/2024</td>
+              {/* <td>01/01/2024</td> */}
               <td>5</td>
               <td>10%</td>
               <td>1000</td>
@@ -64,7 +68,7 @@ const OrderView = () => {
             <tr className="p-3">
               <td className="text-left p-3">Lays</td>
               <td>Rs. 200</td>
-              <td>01/01/2024</td>
+              {/* <td>01/01/2024</td> */}
               <td>5</td>
               <td>10%</td>
               <td>1000</td>
@@ -72,7 +76,7 @@ const OrderView = () => {
             <tr className="p-3">
               <td className="text-left p-3">Pepsi</td>
               <td>Rs. 200</td>
-              <td>01/01/2024</td>
+              {/* <td>01/01/2024</td> */}
               <td>5</td>
               <td>10%</td>
               <td>1000</td>
@@ -80,9 +84,9 @@ const OrderView = () => {
           </tbody>
         </table>
 
-        <div className="flex border-t pt-3 pr-14 items-end justify-end gap-12">
+        <div className="flex border-t pt-3 pr-14 print:pr-0 items-end justify-end gap-12">
           <div>
-               <button className="p-2 px-5 bg-black text-white rounded-lg">Print</button>
+               <button onClick={handlePrint} className="print:hidden p-2 px-5 bg-black text-white rounded-lg">Print</button>
           </div>
           <div className="flex gap-8">
                <ul>

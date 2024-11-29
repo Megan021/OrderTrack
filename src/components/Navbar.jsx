@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const Navbar = () => {
   return (
     <>
-     <div className='flex justify-between items-center p-4 px-8 bg-white bg-opacity-50 backdrop-blur-md border-b border-gray-200 shadow sticky top-0 z-20'>
+     <div className='print:hidden flex justify-between items-center p-4 px-8 bg-white bg-opacity-50 backdrop-blur-md border-b border-gray-200 shadow sticky top-0 z-20'>
           <div>
                <i className='flex items-center gap-3 text-lg font-medium'><TbBuildingWarehouse className='text-2xl text-black stroke-1' />OrderTrack</i>
           </div>

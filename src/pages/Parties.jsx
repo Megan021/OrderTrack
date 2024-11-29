@@ -190,7 +190,7 @@ const Parties = () => {
                     ) : (
                       <button
                         onClick={() => handleEdit(index)}
-                        className="rounded-full p-1 px-4 bg-blue-200 text-blue-600 flex items-center gap-2"
+                        className="rounded-full p-1 px-4 bg-gray-200 text-blue-500 flex items-center gap-2"
                       >
                         <Pencil size={14} />
                         Edit
@@ -199,7 +199,7 @@ const Parties = () => {
                     <button>
                       <Trash
                         size={33}
-                        className="border rounded-full bg-red-200 text-red-600 p-2"
+                        className="border rounded-full bg-gray-200 text-red-500 p-2"
                       />
                     </button>
                   </div>
